@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DHEA KURNIAWAN — Kontak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: var(--hitam);
+        color: var(--putih);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav
+      style="background: var(--hitam); border-color: rgba(255, 255, 255, 0.1)"
+    >
+      <a class="nav-logo" href="index.html" style="color: var(--putih)"
+        >DHEA KURNIAWAN<span>.</span>
+      </a>
+
+      <div class="nav-menu">
+        <a
+          class="nav-item"
+          href="index.html"
+          style="
+            background: var(--hitam);
+            color: var(--putih);
+            border-color: rgba(255, 255, 255, 0.2);
+          "
+          >Beranda</a
+        >
+        <a
+          class="nav-item"
+          href="studi-kasus.html"
+          style="
+            background: var(--hitam);
+            color: var(--putih);
+            border-color: rgba(255, 255, 255, 0.2);
+          "
+          >Studi Kasus</a
+        >
+        <a
+          class="nav-item"
+          href="tentang.html"
+          style="
+            background: var(--hitam);
+            color: var(--putih);
+            border-color: rgba(255, 255, 255, 0.2);
+          "
+          >Tentang</a
+        >
+        <a
+          class="nav-item active"
+          href="kontak.html"
+          style="border-color: rgba(255, 255, 255, 0.2)"
+          >Kontak</a
+        >
+        <a class="nav-cta" href="kontak.html">Hire Me →</a>
+      </div>
+    </nav>
+
+    <div class="page-content">
+      <!-- CONTACT HERO -->
+      <div class="contact-hero">
+        <div>
+          <div
+            class="section-label"
+            style="
+              background: var(--kuning);
+              color: var(--hitam);
+              border-color: var(--kuning);
+              margin-bottom: 24px;
+            "
+          >
+            Hubungi Saya
+          </div>
+          <h1 class="contact-headline">
+            MULAI<br /><span>PROYEK</span><br />BERSAMA
+          </h1>
+          <p class="contact-subtext">
+            Punya proyek menarik? Atau sekadar ingin ngopi virtual dan diskusi
+            ide? Saya selalu senang mendengar cerita Anda.😜
+          </p>
+          <div class="contact-channels">
+            <div class="contact-channel">
+              <div class="channel-icon">✉️</div>
+              <div class="channel-info">
+                <div class="channel-label">Email</div>
+                <div class="channel-value">halo@email.com</div>
+              </div>
+            </div>
+            <div class="contact-channel">
+              <div class="channel-icon">💼</div>
+              <div class="channel-info">
+                <div class="channel-label">LinkedIn</div>
+                <div class="channel-value">linkedin.com</div>
+              </div>
+            </div>
+            <div class="contact-channel">
+              <div class="channel-icon">🎨</div>
+              <div class="channel-info">
+                <div class="channel-label">Instagram</div>
+                <div class="channel-value">Instagram.com</div>
+              </div>
+            </div>
+            <div class="contact-channel">
+              <div class="channel-icon">📱</div>
+              <div class="channel-info">
+                <div class="channel-label">WhatsApp</div>
+                <div class="channel-value">+62 821 xxxx xxxx</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form-wrap">
+          <div class="form-title">KIRIM PESAN →</div>
+          <div class="form-grid">
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-field-label">Nama Lengkap</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  placeholder="Budi Santoso"
+                />
+              </div>
+              <div class="form-field" style="border-right: none">
+                <label class="form-field-label">Email</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  placeholder="budi@perusahaan.com"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-field-label">Nama Pengirim</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  placeholder="Nama Pengirim"
+                />
+              </div>
+              <div class="form-field" style="border-right: none">
+                <label class="form-field-label">Jenis Proyek</label>
+                <select class="form-select form-input">
+                  <option value="" disabled selected>Pilih jenis...</option>
+                  <option>Mobile App Design</option>
+                  <option>Web App / Dashboard</option>
+                  <option>Design System</option>
+                  <option>UX Research & Audit</option>
+                  <option>Brand & Visual Identity</option>
+                  <option>ngopi Santai</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row form-row--full">
+              <div class="form-field" style="border-right: none">
+                <label class="form-field-label">Ceritakan Proyek Anda</label>
+                <textarea
+                  class="form-textarea"
+                  placeholder="Halo Dhea Kurniawan, saya sedang membangun aplikasi... Timeline proyek kami adalah... Budget yang tersedia sekitar..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="form-submit" onclick="handleSubmit(this)">
+                KIRIM PESAN SEKARANG →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STRIP INFO -->
+      <div class="contact-strip">
+        <div class="strip-item">
+          <span class="strip-icon">⏱️</span>
+          <div class="strip-title">RESPONS CEPAT</div>
+          <p class="strip-value">Biasanya membalas dalam 1x24 jam.</p>
+        </div>
+        <div class="strip-item">
+          <span class="strip-icon">🌏</span>
+          <div class="strip-title">REMOTE FRIENDLY</div>
+          <p class="strip-value">
+            Siap bekerja secara remote maupun onsite di area Subang, Bandung,
+            dan sekitarnya.
+          </p>
+        </div>
+        <div class="strip-item">
+          <span class="strip-icon">📅</span>
+          <div class="strip-title">BOOKING CALL</div>
+          <p class="strip-value">Terbuka untuk ngobrol santai</p>
+        </div>
+        <div class="strip-item">
+          <span class="strip-icon">💰</span>
+          <div class="strip-title">RATE & BUDGET</div>
+          <p class="strip-value">
+            Sebagai fresh graduate, saya menawarkan rate yang kompetitif dan
+            fleksibel sesuai kebutuhan proyekmu.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function handleSubmit(btn) {
+        const original = btn.textContent;
+        btn.textContent = "MENGIRIM...";
+        btn.style.background = "rgba(255,255,255,0.1)";
+        btn.style.color = "rgba(255,255,255,0.5)";
+        btn.style.borderColor = "rgba(255,255,255,0.2)";
+        setTimeout(() => {
+          btn.textContent =
+            "✅ PESAN TERKIRIM! SAYA AKAN SEGERA MENGHUBUNGI ANDA";
+          btn.style.background = "var(--hijau)";
+          btn.style.color = "var(--hitam)";
+          btn.style.borderColor = "var(--hijau)";
+        }, 1800);
+      }
+    </script>
+  </body>
+</html>
